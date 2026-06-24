@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/roster", label: "Roster" },
   { href: "/news", label: "News" },
   { href: "/about", label: "About" },
+  { href: "/giveaway", label: "Giveaway" },
 ];
 
 export default function Header() {
