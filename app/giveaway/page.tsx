@@ -24,6 +24,12 @@ export default function GiveawayPage() {
           font-weight: 700;
           margin-bottom: 0.75rem;
         }
+        #mc_embed_signup .giveaway-description {
+          color: #3f3f46 !important;
+          font-size: 0.9375rem;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+        }
         #mc_embed_signup .asterisk {
           color: #e11d48 !important;
         }
@@ -74,6 +80,7 @@ export default function GiveawayPage() {
 <div id="mc_embed_signup">
     <form action="https://vegasathleticsmlb.us20.list-manage.com/subscribe/post?u=775c040759bfcee31ee35b7d5&amp;id=5f1ce5f59b&amp;f_id=0018f0e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
         <div id="mc_embed_signup_scroll"><h2>Win A's Tickets for the 2028 Inaugural Season</h2>
+            <p class="giveaway-description">Enter your email to subscribe and be entered to win two tickets to an A's home game in the 2028 inaugural season. One winner will be randomly selected each month, 6 months prior to the start of the season.</p>
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div>
         <div id="mce-responses" class="clear foot">
