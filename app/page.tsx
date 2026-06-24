@@ -1,0 +1,166 @@
+import Link from "next/link";
+import EmailSignup from "@/components/EmailSignup";
+import NewsCard from "@/components/NewsCard";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Las Vegas Athletics Fan Central",
+  description:
+    "Welcome to Las Vegas Athletics Fan Central — your home for Vegas Athletics MLB news, schedules, roster updates, and fan community. Go Vegas A's!",
+  path: "/",
+});
+
+const placeholderNews = [
+  {
+    title: "Las Vegas Athletics Stadium Plans Take Shape",
+    excerpt:
+      "The proposed ballpark on the Las Vegas Strip continues to generate excitement among fans as renderings and timeline details emerge.",
+    date: "Jun 20, 2026",
+    category: "Stadium",
+  },
+  {
+    title: "Vegas A's Relocation: What Fans Need to Know",
+    excerpt:
+      "Everything you need to know about the Athletics' move from Oakland to Las Vegas, including key dates and what it means for the fan experience.",
+    date: "Jun 15, 2026",
+    category: "Relocation",
+  },
+  {
+    title: "Building a Fan Base in the Desert",
+    excerpt:
+      "Las Vegas sports fans are ready to embrace Major League Baseball. Here's how the Vegas Athletics community is growing across Nevada.",
+    date: "Jun 10, 2026",
+    category: "Community",
+  },
+];
+
+const quickLinks = [
+  {
+    title: "Schedule",
+    description: "Upcoming games and key dates for the Las Vegas Athletics season.",
+    href: "/schedule",
+    icon: "📅",
+  },
+  {
+    title: "Roster",
+    description: "Meet the players who will represent the Vegas A's on the diamond.",
+    href: "/roster",
+    icon: "⚾",
+  },
+  {
+    title: "News",
+    description: "The latest headlines and updates from the Athletics world.",
+    href: "/news",
+    icon: "📰",
+  },
+];
+
+export default function Home() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-athletics-green/20 via-athletics-darker to-athletics-darker" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-athletics-green/30 via-transparent to-transparent" />
+        <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-athletics-gold/5 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-athletics-gold/30 bg-athletics-gold/10 px-4 py-1.5 text-sm font-medium text-athletics-gold">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-athletics-gold" />
+              Vegas Athletics MLB — Fan Central
+            </div>
+
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Welcome to{" "}
+              <span className="bg-gradient-to-r from-athletics-green to-athletics-gold bg-clip-text text-transparent">
+                Las Vegas Athletics
+              </span>{" "}
+              Fan Central
+            </h1>
+
+            <p className="mt-6 text-lg leading-relaxed text-zinc-300 sm:text-xl">
+              Your unofficial home for everything Las Vegas Athletics — schedules,
+              rosters, news, and a growing community of passionate Vegas A&apos;s
+              fans.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Link
+                href="/schedule"
+                className="w-full rounded-xl bg-athletics-green px-8 py-3.5 font-semibold text-white shadow-lg shadow-athletics-green/25 transition-all hover:bg-athletics-green/90 hover:shadow-athletics-green/40 sm:w-auto"
+              >
+                View Schedule
+              </Link>
+              <Link
+                href="/news"
+                className="w-full rounded-xl border border-white/20 px-8 py-3.5 font-semibold text-white transition-all hover:border-athletics-gold hover:text-athletics-gold sm:w-auto"
+              >
+                Latest News
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Links */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-6 sm:grid-cols-3">
+          {quickLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="group rounded-xl border border-white/10 bg-athletics-dark p-6 transition-all hover:border-athletics-green/40 hover:shadow-lg hover:shadow-athletics-green/10"
+            >
+              <span className="text-3xl">{link.icon}</span>
+              <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-athletics-gold">
+                {link.title}
+              </h2>
+              <p className="mt-2 text-sm text-zinc-400">{link.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Email Signup */}
+      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <EmailSignup />
+      </section>
+
+      {/* News & Updates */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mb-8 flex items-end justify-between">
+          <div>
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">
+              News &amp; Updates
+            </h2>
+            <p className="mt-2 text-zinc-400">
+              The latest from the Las Vegas Athletics world
+            </p>
+          </div>
+          <Link
+            href="/news"
+            className="hidden text-sm font-medium text-athletics-gold transition-colors hover:text-white sm:block"
+          >
+            View all news &rarr;
+          </Link>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {placeholderNews.map((article) => (
+            <NewsCard key={article.title} {...article} />
+          ))}
+        </div>
+
+        <div className="mt-8 text-center sm:hidden">
+          <Link
+            href="/news"
+            className="text-sm font-medium text-athletics-gold transition-colors hover:text-white"
+          >
+            View all news &rarr;
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
