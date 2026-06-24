@@ -47,10 +47,19 @@ export default function GiveawayPage() {
           color: #fff !important;
           border: none !important;
           border-radius: 0.5rem;
-          padding: 0.75rem 1.5rem;
+          box-sizing: border-box !important;
+          display: inline-block !important;
+          height: 2.75rem !important;
+          min-height: 2.75rem !important;
+          line-height: 2.75rem !important;
+          padding: 0 1.5rem !important;
+          font-size: 0.875rem !important;
           font-weight: 600;
           cursor: pointer;
           margin-top: 0.5rem;
+          vertical-align: middle !important;
+          -webkit-appearance: none;
+          appearance: none;
         }
         #mc_embed_signup #mc-embedded-subscribe.button:hover {
           background-color: #004d32 !important;

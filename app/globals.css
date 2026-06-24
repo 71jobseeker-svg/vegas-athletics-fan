@@ -48,3 +48,14 @@ body {
   -webkit-text-fill-color: #171717 !important;
   background-color: #fff !important;
 }
+
+.mailchimp-embed #mc_embed_signup #mc-embedded-subscribe.button,
+.mailchimp-embed #mc_embed_signup input.button {
+  box-sizing: border-box !important;
+  display: inline-block !important;
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+  line-height: 2.75rem !important;
+  padding: 0 1.5rem !important;
+  vertical-align: middle !important;
+}
