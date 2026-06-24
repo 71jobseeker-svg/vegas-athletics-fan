@@ -4,9 +4,63 @@ export default function GiveawayPage() {
     <div id="mc_embed_shell">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
-        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: px;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        #mc_embed_signup {
+          background: #fff !important;
+          clear: left;
+          font: 14px Helvetica, Arial, sans-serif;
+          width: 100% !important;
+          color: #171717 !important;
+          padding: 1.25rem;
+          border-radius: 0.75rem;
+        }
+        #mc_embed_signup h2,
+        #mc_embed_signup label,
+        #mc_embed_signup .indicates-required,
+        #mc_embed_signup .mc-field-group {
+          color: #171717 !important;
+        }
+        #mc_embed_signup h2 {
+          font-size: 1.25rem;
+          font-weight: 700;
+          margin-bottom: 0.75rem;
+        }
+        #mc_embed_signup .asterisk {
+          color: #e11d48 !important;
+        }
+        #mc_embed_signup input[type="email"],
+        #mc_embed_signup input[type="text"],
+        #mc_embed_signup input[type="tel"] {
+          color: #171717 !important;
+          background-color: #fff !important;
+          border: 1px solid #d4d4d8 !important;
+          border-radius: 0.5rem;
+          padding: 0.625rem 0.75rem;
+          width: 100%;
+          margin-top: 0.25rem;
+        }
+        #mc_embed_signup input::placeholder {
+          color: #71717a !important;
+        }
+        #mc_embed_signup #mc-embedded-subscribe.button,
+        #mc_embed_signup input.button {
+          background-color: #006341 !important;
+          color: #fff !important;
+          border: none !important;
+          border-radius: 0.5rem;
+          padding: 0.75rem 1.5rem;
+          font-weight: 600;
+          cursor: pointer;
+          margin-top: 0.5rem;
+        }
+        #mc_embed_signup #mc-embedded-subscribe.button:hover {
+          background-color: #004d32 !important;
+        }
+        #mc_embed_signup .mc-field-group {
+          margin-bottom: 1rem;
+        }
+        #mc_embed_signup .response {
+          color: #171717 !important;
+        }
 </style>
 <div id="mc_embed_signup">
     <form action="https://vegasathleticsmlb.us20.list-manage.com/subscribe/post?u=775c040759bfcee31ee35b7d5&amp;id=5f1ce5f59b&amp;f_id=0018f0e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -792,7 +846,7 @@ export default function GiveawayPage() {
     return (
       <div className="min-h-screen bg-zinc-950 text-white flex flex-col items-center justify-center p-4">
         <div className="w-full max-w-lg bg-zinc-900 p-6 rounded-xl border border-zinc-800 shadow-xl">
-          <div dangerouslySetInnerHTML={{ __html: mailchimpFormHtml }} />
+        <div className="mailchimp-embed w-full" dangerouslySetInnerHTML={{ __html: mailchimpFormHtml }} />
         </div>
       </div>
     );

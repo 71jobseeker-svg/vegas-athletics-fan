@@ -30,3 +30,21 @@ body {
   background-color: var(--athletics-green);
   color: white;
 }
+
+/* Mailchimp embed: force dark text on white form (overrides site dark theme) */
+.mailchimp-embed #mc_embed_signup,
+.mailchimp-embed #mc_embed_signup h2,
+.mailchimp-embed #mc_embed_signup label,
+.mailchimp-embed #mc_embed_signup .indicates-required,
+.mailchimp-embed #mc_embed_signup .mc-field-group,
+.mailchimp-embed #mc_embed_signup .response {
+  color: #171717 !important;
+}
+
+.mailchimp-embed #mc_embed_signup input[type="email"],
+.mailchimp-embed #mc_embed_signup input[type="text"],
+.mailchimp-embed #mc_embed_signup input[type="tel"] {
+  color: #171717 !important;
+  -webkit-text-fill-color: #171717 !important;
+  background-color: #fff !important;
+}
