@@ -36,22 +36,22 @@ const placeholderNews = [
 
 const quickLinks = [
   {
+    title: "Today's Game Hub",
+    description: "Opponent, pitchers, odds, form, standings, and injuries — all in one place.",
+    href: "/today",
+    icon: "🏟️",
+  },
+  {
+    title: "Live Odds",
+    description: "Moneyline, run line, and totals from top US sportsbooks.",
+    href: "/odds",
+    icon: "📊",
+  },
+  {
     title: "Schedule",
     description: "Upcoming games and key dates for the Las Vegas Athletics season.",
     href: "/schedule",
     icon: "📅",
-  },
-  {
-    title: "Roster",
-    description: "Meet the players who will represent the Vegas A's on the diamond.",
-    href: "/roster",
-    icon: "⚾",
-  },
-  {
-    title: "News",
-    description: "The latest headlines and updates from the Athletics world.",
-    href: "/news",
-    icon: "📰",
   },
 ];
 
@@ -87,16 +87,16 @@ export default function Home() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="/schedule"
+                href="/today"
                 className="w-full rounded-xl bg-athletics-green px-8 py-3.5 font-semibold text-white shadow-lg shadow-athletics-green/25 transition-all hover:bg-athletics-green/90 hover:shadow-athletics-green/40 sm:w-auto"
               >
-                View Schedule
+                Today&apos;s Game Hub
               </Link>
               <Link
-                href="/news"
+                href="/odds"
                 className="w-full rounded-xl border border-white/20 px-8 py-3.5 font-semibold text-white transition-all hover:border-athletics-gold hover:text-athletics-gold sm:w-auto"
               >
-                Latest News
+                Live Odds
               </Link>
             </div>
           </div>

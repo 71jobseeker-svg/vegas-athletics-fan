@@ -28,6 +28,22 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
+                  href="/today"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  Today&apos;s Game Hub
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/odds"
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  Live Odds
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/schedule"
                   className="text-zinc-400 transition-colors hover:text-white"
                 >
