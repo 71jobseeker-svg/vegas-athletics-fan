@@ -16,6 +16,7 @@ const articles = [
       "New photos show the Athletics' $2 billion domed ballpark is now visibly becoming part of the Las Vegas Strip skyline. Construction photos taken June 22 show the structure going vertical, with the 33,000-seat facility on track for the 2028 Opening Day.",
     date: "June 22, 2026",
     category: "Stadium",
+    url: "https://www.reviewjournal.com/sports/athletics/as-2b-ballpark-starting-to-become-part-of-las-vega-strip-skyline-photos-3841866/",
   },
   {
     title: "Zack Gelof's 24-Game Hit Streak Ends After Injury",
@@ -23,6 +24,7 @@ const articles = [
       "A's second baseman Zack Gelof's impressive 24-game hitting streak — the longest active streak in the majors — came to a painful end Tuesday night after he was spiked on his right hand.",
     date: "June 22, 2026",
     category: "Team News",
+    url: "https://www.reviewjournal.com/sports/athletics/",
   },
   {
     title: "Aviators Claim First-Half PCL Title with A's Prospects Leading the Way",
@@ -30,6 +32,7 @@ const articles = [
       "The Las Vegas Aviators claimed the first-half Pacific Coast League title, powered by top Athletics prospects who've already shown they can produce at the big league level. The Aviators will host a playoff series starting September 22.",
     date: "June 22, 2026",
     category: "Prospects",
+    url: "https://www.reviewjournal.com/sports/athletics/",
   },
   {
     title: "A's Have Contingency Plan if Bally's Plaza Isn't Ready for 2028",
@@ -37,6 +40,7 @@ const articles = [
       "The Athletics confirmed they have a backup plan if Bally's Corp doesn't complete the planned northwest plaza adjacent to the new ballpark before Opening Day 2028. Fans would access the stadium via existing pedestrian bridges from Excalibur and MGM Grand if needed.",
     date: "June 21, 2026",
     category: "Stadium",
+    url: "https://www.reviewjournal.com/sports/athletics/as-planning-for-potential-for-2028-ballpark-opening-without-ballys-planned-mixed-use-project-3827465/",
   },
 ];
 

@@ -3,6 +3,7 @@ type NewsCardProps = {
   excerpt: string;
   date: string;
   category: string;
+  url?: string;
 };
 
 export default function NewsCard({
@@ -10,6 +11,7 @@ export default function NewsCard({
   excerpt,
   date,
   category,
+  url,
 }: NewsCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-white/10 bg-athletics-dark transition-all hover:border-athletics-green/40 hover:shadow-lg hover:shadow-athletics-green/10">
@@ -27,9 +29,20 @@ export default function NewsCard({
         <p className="mt-2 flex-1 text-sm leading-relaxed text-zinc-400">
           {excerpt}
         </p>
-        <span className="mt-4 text-sm font-medium text-athletics-green transition-colors group-hover:text-athletics-gold">
-          Read more &rarr;
-        </span>
+        {url ? (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 text-sm font-medium text-athletics-green transition-colors hover:text-athletics-gold"
+          >
+            Read more &rarr;
+          </a>
+        ) : (
+          <span className="mt-4 text-sm font-medium text-athletics-green transition-colors group-hover:text-athletics-gold">
+            Read more &rarr;
+          </span>
+        )}
       </div>
     </article>
   );
