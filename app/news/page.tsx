@@ -11,46 +11,32 @@ export const metadata = createPageMetadata({
 
 const articles = [
   {
-    title: "Las Vegas Athletics Stadium Plans Take Shape",
+    title: "A's Ballpark Rising on the Las Vegas Strip",
     excerpt:
-      "The proposed ballpark on the Las Vegas Strip continues to generate excitement among fans as renderings and timeline details emerge. The state-of-the-art facility promises to be a crown jewel of MLB venues.",
-    date: "Jun 20, 2026",
+      "New photos show the Athletics' $2 billion domed ballpark is now visibly becoming part of the Las Vegas Strip skyline. Construction photos taken June 22 show the structure going vertical, with the 33,000-seat facility on track for the 2028 Opening Day.",
+    date: "June 22, 2026",
     category: "Stadium",
   },
   {
-    title: "Vegas A's Relocation: What Fans Need to Know",
+    title: "Zack Gelof's 24-Game Hit Streak Ends After Injury",
     excerpt:
-      "Everything you need to know about the Athletics' move from Oakland to Las Vegas, including key dates, ticket information, and what it means for the fan experience in Sin City.",
-    date: "Jun 15, 2026",
-    category: "Relocation",
+      "A's second baseman Zack Gelof's impressive 24-game hitting streak — the longest active streak in the majors — came to a painful end Tuesday night after he was spiked on his right hand.",
+    date: "June 22, 2026",
+    category: "Team News",
   },
   {
-    title: "Building a Fan Base in the Desert",
+    title: "Aviators Claim First-Half PCL Title with A's Prospects Leading the Way",
     excerpt:
-      "Las Vegas sports fans are ready to embrace Major League Baseball. Here's how the Vegas Athletics community is growing across Nevada and beyond.",
-    date: "Jun 10, 2026",
-    category: "Community",
-  },
-  {
-    title: "What the Move Means for the AL West",
-    excerpt:
-      "The Las Vegas Athletics' arrival reshapes the American League West landscape. We break down how the Vegas A's will impact rivalries and travel schedules.",
-    date: "Jun 5, 2026",
-    category: "Analysis",
-  },
-  {
-    title: "Top Prospects to Watch for Vegas A's",
-    excerpt:
-      "The Athletics farm system is loaded with talent. These rising stars could make an impact when the team takes the field in Las Vegas.",
-    date: "May 28, 2026",
+      "The Las Vegas Aviators claimed the first-half Pacific Coast League title, powered by top Athletics prospects who've already shown they can produce at the big league level. The Aviators will host a playoff series starting September 22.",
+    date: "June 22, 2026",
     category: "Prospects",
   },
   {
-    title: "Las Vegas Embraces Major League Baseball",
+    title: "A's Have Contingency Plan if Bally's Plaza Isn't Ready for 2028",
     excerpt:
-      "From the Golden Knights to the Raiders, Las Vegas has proven it can support big-league sports. Now it's baseball's turn with the Las Vegas Athletics.",
-    date: "May 20, 2026",
-    category: "Community",
+      "The Athletics confirmed they have a backup plan if Bally's Corp doesn't complete the planned northwest plaza adjacent to the new ballpark before Opening Day 2028. Fans would access the stadium via existing pedestrian bridges from Excalibur and MGM Grand if needed.",
+    date: "June 21, 2026",
+    category: "Stadium",
   },
 ];
 
