@@ -1,6 +1,7 @@
 import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 import NewsCard from "@/components/NewsCard";
+import OpeningDayCountdown from "@/components/OpeningDayCountdown";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
@@ -102,6 +103,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <OpeningDayCountdown />
 
       {/* Quick Links */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
