@@ -3,9 +3,9 @@ import PageHeader from "@/components/PageHeader";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "News",
+  title: "Las Vegas Athletics News — Vegas A's Headlines",
   description:
-    "Latest Las Vegas Athletics news and updates. Stay informed on Vegas Athletics MLB relocation, stadium developments, roster moves, and fan community news.",
+    "Latest Las Vegas Athletics news and Vegas A's headlines. Stadium updates, roster moves, prospect news, and everything happening with the Athletics MLB relocation to Las Vegas.",
   path: "/news",
 });
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { createPageMetadata } from "@/lib/metadata";
+import { createDefaultMetadata } from "@/lib/metadata";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,11 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Las Vegas Athletics Fan Central",
-  description:
-    "The ultimate unofficial fan site for the Las Vegas Athletics (Vegas A's). Get schedules, roster updates, news, and connect with fellow Vegas Athletics MLB fans.",
-});
+export const metadata: Metadata = createDefaultMetadata();
 
 export default function RootLayout({
   children,

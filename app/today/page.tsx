@@ -5,9 +5,9 @@ import { createPageMetadata } from "@/lib/metadata";
 import { fetchGameHubData } from "@/lib/game-hub";
 
 export const metadata = createPageMetadata({
-  title: "Today's Game Hub",
+  title: "Today's Las Vegas Athletics Game Hub",
   description:
-    "Las Vegas Athletics game day hub — opponent, starting pitchers, live odds, recent form, AL West standings, and injury report. Your daily Vegas A's destination.",
+    "Your daily Las Vegas Athletics game day hub. Vegas A's opponent, starting pitchers, live odds, recent form, AL West standings, and injury report — all in one place.",
   path: "/today",
 });
 

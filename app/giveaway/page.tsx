@@ -1,3 +1,12 @@
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+  title: "Win Vegas A's Tickets — 2028 Opening Season Giveaway",
+  description:
+    "Enter to win two Las Vegas Athletics home game tickets for the 2028 inaugural season. Subscribe for Vegas A's updates and be entered to win — one winner selected monthly.",
+  path: "/giveaway",
+});
+
 export default function GiveawayPage() {
     const mailchimpFormHtml = `
     

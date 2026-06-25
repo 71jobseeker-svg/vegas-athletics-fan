@@ -2,9 +2,9 @@ import PageHeader from "@/components/PageHeader";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "About",
+  title: "About Las Vegas Athletics Fan Central",
   description:
-    "About Las Vegas Athletics Fan Central — an unofficial fan site dedicated to Vegas Athletics MLB fans. Learn about our mission and connect with the community.",
+    "Learn about Las Vegas Athletics Fan Central — the unofficial home for Vegas A's fans. Our mission, community, and dedication to covering the Las Vegas Athletics MLB journey.",
   path: "/about",
 });
 

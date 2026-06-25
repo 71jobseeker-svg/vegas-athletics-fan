@@ -5,9 +5,9 @@ import OpeningDayCountdown from "@/components/OpeningDayCountdown";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Las Vegas Athletics Fan Central",
+  title: "Las Vegas Athletics Home — Vegas A's Fan Hub",
   description:
-    "Welcome to Las Vegas Athletics Fan Central — your home for Vegas Athletics MLB news, schedules, roster updates, and fan community. Go Vegas A's!",
+    "The home of Las Vegas Athletics fandom. Live Opening Day 2028 countdown, Vegas A's news, game hub, odds, schedule, and roster — your unofficial Las Vegas Athletics MLB destination.",
   path: "/",
 });
 

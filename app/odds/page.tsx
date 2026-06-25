@@ -5,9 +5,9 @@ import { createPageMetadata } from "@/lib/metadata";
 import { fetchAthleticsOdds } from "@/lib/odds";
 
 export const metadata = createPageMetadata({
-  title: "Live Odds",
+  title: "Las Vegas Athletics Odds — Vegas A's Betting Lines",
   description:
-    "Live Las Vegas Athletics betting odds — moneyline, run line, and totals from top US sportsbooks. Vegas A's MLB odds updated every 5 minutes.",
+    "Live Las Vegas Athletics betting odds for today's game. Vegas A's moneyline, run line, and over/under totals from top US sportsbooks, updated every 5 minutes.",
   path: "/odds",
 });
 

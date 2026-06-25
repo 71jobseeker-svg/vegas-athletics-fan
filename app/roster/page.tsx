@@ -4,9 +4,9 @@ import { createPageMetadata } from "@/lib/metadata";
 import { fetchAthleticsRoster } from "@/lib/roster";
 
 export const metadata = createPageMetadata({
-  title: "Roster",
+  title: "Las Vegas Athletics Roster — Vegas A's Players",
   description:
-    "Las Vegas Athletics roster — meet the players of the Vegas A's MLB team. View pitchers, position players, and coaching staff.",
+    "Current Las Vegas Athletics roster with live data from MLB Stats API. View Vegas A's pitchers, position players, jersey numbers, stats, and injury status updated daily.",
   path: "/roster",
 });
 

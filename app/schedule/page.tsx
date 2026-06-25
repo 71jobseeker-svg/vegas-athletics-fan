@@ -7,9 +7,9 @@ import { fetchAthleticsSchedule } from "@/lib/schedule";
 import { fetchAlWestStandings } from "@/lib/standings";
 
 export const metadata = createPageMetadata({
-  title: "Schedule",
+  title: "Las Vegas Athletics Schedule — Vegas A's Games",
   description:
-    "Las Vegas Athletics game schedule and key dates. Stay up to date on Vegas A's MLB games, spring training, and important season milestones.",
+    "Live Las Vegas Athletics schedule with upcoming games, scores, and AL West standings. Track every Vegas A's matchup on the road to Opening Day 2028 in Las Vegas.",
   path: "/schedule",
 });
 
