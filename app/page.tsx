@@ -2,6 +2,7 @@ import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 import NewsCard from "@/components/NewsCard";
 import OpeningDayCountdown from "@/components/OpeningDayCountdown";
+import { articles } from "@/lib/articles";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
@@ -11,29 +12,7 @@ export const metadata = createPageMetadata({
   path: "/",
 });
 
-const placeholderNews = [
-  {
-    title: "Las Vegas Athletics Stadium Plans Take Shape",
-    excerpt:
-      "The proposed ballpark on the Las Vegas Strip continues to generate excitement among fans as renderings and timeline details emerge.",
-    date: "Jun 20, 2026",
-    category: "Stadium",
-  },
-  {
-    title: "Vegas A's Relocation: What Fans Need to Know",
-    excerpt:
-      "Everything you need to know about the Athletics' move from Oakland to Las Vegas, including key dates and what it means for the fan experience.",
-    date: "Jun 15, 2026",
-    category: "Relocation",
-  },
-  {
-    title: "Building a Fan Base in the Desert",
-    excerpt:
-      "Las Vegas sports fans are ready to embrace Major League Baseball. Here's how the Vegas Athletics community is growing across Nevada.",
-    date: "Jun 10, 2026",
-    category: "Community",
-  },
-];
+const homepageNews = articles.slice(0, 3);
 
 const quickLinks = [
   {
@@ -150,8 +129,8 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {placeholderNews.map((article) => (
-            <NewsCard key={article.title} {...article} />
+          {homepageNews.map((article) => (
+            <NewsCard key={article.slug} {...article} />
           ))}
         </div>
 

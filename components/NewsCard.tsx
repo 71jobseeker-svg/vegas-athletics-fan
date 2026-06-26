@@ -1,17 +1,14 @@
-type NewsCardProps = {
-  title: string;
-  excerpt: string;
-  date: string;
-  category: string;
-  url?: string;
-};
+import Link from "next/link";
+import type { Article } from "@/lib/articles";
+
+type NewsCardProps = Pick<Article, "slug" | "title" | "excerpt" | "date" | "category">;
 
 export default function NewsCard({
+  slug,
   title,
   excerpt,
   date,
   category,
-  url,
 }: NewsCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-white/10 bg-athletics-dark transition-all hover:border-athletics-green/40 hover:shadow-lg hover:shadow-athletics-green/10">
@@ -29,20 +26,12 @@ export default function NewsCard({
         <p className="mt-2 flex-1 text-sm leading-relaxed text-zinc-400">
           {excerpt}
         </p>
-        {url ? (
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 text-sm font-medium text-athletics-green transition-colors hover:text-athletics-gold"
-          >
-            Read more &rarr;
-          </a>
-        ) : (
-          <span className="mt-4 text-sm font-medium text-athletics-green transition-colors group-hover:text-athletics-gold">
-            Read more &rarr;
-          </span>
-        )}
+        <Link
+          href={`/news/${slug}`}
+          className="mt-4 text-sm font-medium text-athletics-green transition-colors hover:text-athletics-gold"
+        >
+          Read more &rarr;
+        </Link>
       </div>
     </article>
   );
