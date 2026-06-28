@@ -2,15 +2,44 @@
 
 import { FormEvent, useState } from "react";
 
+type FormStatus = "idle" | "loading" | "success" | "error";
+
 export default function EmailSignup() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    if (email.trim()) {
-      setSubmitted(true);
+    if (!email.trim()) return;
+
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        console.error("[EmailSignup] Subscribe failed:", data.error);
+        setErrorMessage(
+          data.error ?? "Unable to subscribe right now. Please try again.",
+        );
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
       setEmail("");
+    } catch (error) {
+      console.error("[EmailSignup] Subscribe request failed:", error);
+      setErrorMessage("Unable to subscribe right now. Please try again.");
+      setStatus("error");
     }
   }
 
@@ -28,7 +57,7 @@ export default function EmailSignup() {
           moves, and the latest fan news delivered to your inbox.
         </p>
 
-        {submitted ? (
+        {status === "success" ? (
           <div className="mt-8 rounded-xl border border-athletics-gold/30 bg-athletics-gold/10 px-6 py-4">
             <p className="font-medium text-athletics-gold">
               Thanks for signing up! We&apos;ll keep you in the loop.
@@ -45,15 +74,21 @@ export default function EmailSignup() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
               required
-              className="w-full rounded-xl border border-white/10 bg-athletics-dark px-5 py-3.5 text-white placeholder:text-zinc-500 focus:border-athletics-gold focus:outline-none focus:ring-2 focus:ring-athletics-gold/30 sm:max-w-sm"
+              disabled={status === "loading"}
+              className="w-full rounded-xl border border-white/10 bg-athletics-dark px-5 py-3.5 text-white placeholder:text-zinc-500 focus:border-athletics-gold focus:outline-none focus:ring-2 focus:ring-athletics-gold/30 disabled:opacity-60 sm:max-w-sm"
             />
             <button
               type="submit"
-              className="rounded-xl bg-athletics-gold px-8 py-3.5 font-semibold text-athletics-dark transition-all hover:bg-athletics-gold/90 hover:shadow-lg hover:shadow-athletics-gold/20"
+              disabled={status === "loading"}
+              className="rounded-xl bg-athletics-gold px-8 py-3.5 font-semibold text-athletics-dark transition-all hover:bg-athletics-gold/90 hover:shadow-lg hover:shadow-athletics-gold/20 disabled:cursor-not-allowed disabled:opacity-60"
             >
-              Subscribe
+              {status === "loading" ? "Subscribing..." : "Subscribe"}
             </button>
           </form>
+        )}
+
+        {status === "error" && errorMessage && (
+          <p className="mt-4 text-sm text-red-400">{errorMessage}</p>
         )}
 
         <p className="mt-4 text-xs text-zinc-500">
