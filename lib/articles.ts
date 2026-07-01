@@ -9,6 +9,46 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "why-las-vegas-ballpark-plays-like-coors-field",
+    title: "Why Las Vegas Ballpark Plays Like Coors Field (And What It Means for 2028)",
+    excerpt:
+      "Las Vegas Ballpark elevation turned the A's June homestand into an offensive explosion — 11 home runs in one game, fly balls carrying like Coors Field. What does that mean for the 2028 Las Vegas Strip stadium?",
+    date: "June 29, 2026",
+    category: "Stadium",
+    content: [
+      "If you watched the Athletics' June 2026 homestand at Las Vegas Ballpark in Summerlin, you already know the answer to a question front offices around baseball are quietly asking: can Las Vegas become the next Coors Field?",
+      "The evidence was impossible to ignore. During a six-game stretch in the desert, games at the Aviators' home park produced offense at a level rarely seen in modern MLB. The signature moment came in a 15-14, 12-inning marathon against the Milwaukee Brewers that featured 11 combined home runs — the highest-scoring game in baseball at that point in the 2026 season.",
+      "The science behind it is straightforward. Las Vegas sits at roughly 2,000 feet above sea level, with Summerlin's elevation pushing past 3,000 feet in the surrounding valley. At altitude, air density drops. That means less drag on a batted ball, longer carry on fly balls, and a disproportionate advantage for hitters who elevate the baseball.",
+      "Sound familiar? It's the same principle that has defined Coors Field in Denver for three decades. The Rockies' home park sits at 5,200 feet, making it the gold standard for altitude-driven offense in MLB. Las Vegas Ballpark isn't quite that extreme, but the June homestand made it clear the effect is real — and it is significant.",
+      "Nick Kurtz and Tyler Soderstrom each launched two home runs in that Brewers game alone, showcasing the kind of power surge altitude can create for young hitters still finding their big league footing. Jonah Heim added a game-tying home run on what looked like a routine pop-up that carried well beyond the fence — the kind of play that makes pitchers shake their heads and hitters grin.",
+      "For A's fans, the offensive fireworks were entertainment. For the organization's baseball operations staff, they were data.",
+      "The critical distinction — and the one that matters most for 2028 — is that Las Vegas Ballpark in Summerlin is an open-air minor league facility. The permanent Las Vegas Athletics ballpark rising on the Strip will be a domed, climate-controlled venue designed from the ground up for Major League Baseball in the desert.",
+      "A retractable or fixed dome changes the equation. Climate control means consistent temperature and humidity inside the building, which can partially offset the altitude effect on ball flight. Modern dome engineering also allows architects to factor in air circulation, wall dimensions, and outfield geometry in ways that can neutralize or amplify offensive environments depending on the design goals.",
+      "The A's have not publicly stated whether their 2028 Strip ballpark will be hitter-friendly or pitcher-neutral, but the Coors Field comparison is now part of the conversation. If the franchise wants an offensive showcase worthy of Las Vegas entertainment culture, altitude plus a favorable park factor could make the Strip one of the most exciting places in baseball to watch a game.",
+      "If they want balance, the dome gives them tools Coors Field never had. Either way, the June homestand was a preview of what Las Vegas baseball can look like when the ball flies — and a reminder that when the A's open their permanent home in 2028, the park they play in will be one of the most fascinating variables in the sport.",
+    ],
+  },
+  {
+    slug: "as-prospects-impressed-las-vegas-series",
+    title: "A's Prospects Who Impressed in the Las Vegas Series",
+    excerpt:
+      "From Henry Bolte's first MLB homer to Max Muncy's rehab return and Joshua Kuroda-Grauer's leadership, the A's prospects Las Vegas series showed the Aviators A's pipeline is ready for 2028.",
+    date: "June 29, 2026",
+    category: "Prospects",
+    content: [
+      "The Athletics' June 2026 homestand at Las Vegas Ballpark was billed as a celebration of the franchise's future in Nevada. By the time the final out was recorded, it had also become a coming-out party for several players with deep ties to the Aviators — the A's Triple-A affiliate and the most direct pipeline to the Las Vegas roster that will take the field in 2028.",
+      "Henry Bolte was the headline name. The outfielder, who has spent significant time developing in the Aviators system, connected for his first career Major League home run during the homestand — a milestone that landed with extra meaning in front of a crowd that had watched him climb the organizational ladder in their own backyard.",
+      "First home runs are always special. Bolte's felt like a statement about the Aviators-to-A's pathway working exactly as the front office envisioned when the franchise committed to Las Vegas.",
+      "Max Muncy returned from a rehab assignment with the Aviators and immediately looked comfortable at the plate during the series. Rehab stints at Triple-A are routine across baseball, but Muncy's assignment carried symbolic weight: a big leaguer sharpening his game in Las Vegas, in front of fans who will one day watch him on the Strip.",
+      "His presence also reinforced the depth of the A's infield options as the organization manages health and performance across a young roster pushing toward contention.",
+      "Then there was Joshua Kuroda-Grauer — a name that may not yet be familiar to casual fans but one that A's coaching staff spoke about with genuine enthusiasm during the homestand. The Aviators infielder drew praise for his leadership in the clubhouse and his steady defensive work up the middle, qualities that don't always show up on highlight reels but matter enormously to a franchise building a culture from the ground up.",
+      "Kuroda-Grauer represents the under-the-radar tier of the A's system: players who may not top national prospect lists but who project as meaningful contributors to a competitive Las Vegas roster.",
+      "The broader picture is what should excite A's fans most. The Aviators are not a disconnected minor league team playing in a different city for a different fanbase. They are the developmental engine for the Las Vegas Athletics — a live preview of the talent, personality, and professionalism that will define the franchise when it opens its Strip ballpark in 2028.",
+      "Every Bolte home run, every Muncy at-bat after rehab, every Kuroda-Grauer defensive play in Summerlin is a data point in that pipeline. The A's front office has invested heavily in player development infrastructure, and the June homestand offered visible proof that the system is producing players ready for the moment.",
+      "As the 2026 season continues, keep an eye on who gets the next call-up from Las Vegas Ballpark. The names that impressed during this series are not just prospects — they are early faces of the Vegas A's era. And for a fanbase counting down to 2028, that is exactly the kind of progress worth following every step of the way.",
+    ],
+  },
+  {
     slug: "as-ballpark-construction-june-2026",
     title: "A's Ballpark Construction June 2026: Steel Rising on the Las Vegas Strip",
     excerpt:
